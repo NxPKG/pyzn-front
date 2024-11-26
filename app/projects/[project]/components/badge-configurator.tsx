@@ -22,7 +22,7 @@ export function BadgeConfigurator({ packageName }: BadgeConfiguratorProps) {
     } else if (period === "monthly") {
       periodUrl = "/month";
     }
-    return `https://static.pyzn.tech/badge/${packageName}${periodUrl}`;
+    return `https://static.pyzn.vercel.app/badge/${packageName}${periodUrl}`;
   };
 
   const getMarkdown = () => {
@@ -34,7 +34,7 @@ export function BadgeConfigurator({ packageName }: BadgeConfiguratorProps) {
   };
 
   const getRich = () => {
-    return `<a href="https://pyzn.tech/projects/${packageName}"><img src="${getBadgeUrl()}" alt="PyPI Downloads"></a>`;
+    return `<a href="https://pyzn.vercel.app/projects/${packageName}"><img src="${getBadgeUrl()}" alt="PyPI Downloads"></a>`;
   };
 
   const getBadgeCode = () => {
@@ -75,7 +75,7 @@ export function BadgeConfigurator({ packageName }: BadgeConfiguratorProps) {
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="weekly">Daily</SelectItem>
+                  <SelectItem value="weekly">Weekly</SelectItem>
                   <SelectItem value="monthly">Monthly</SelectItem>
                   <SelectItem value="total">Total</SelectItem>
                 </SelectContent>

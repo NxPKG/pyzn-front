@@ -47,7 +47,7 @@ export default function PaymentSuccessPage() {
       } catch (err) {
         setIsVerifying(false);
         setError(
-          "We're having trouble confirming your Pro status. Please contact support@pyzn.tech if this persists."
+          "We're having trouble confirming your Pro status. Please contact support@khulnasoft.com if this persists."
         );
         console.error("Error verifying pro status:", err);
       }
@@ -85,8 +85,8 @@ export default function PaymentSuccessPage() {
             </Button>
 
             <p className="text-sm text-muted-foreground text-center">
-              Support: <a href="mailto:support@pyzn.tech" className="text-blue-600 hover:underline">
-              support@pyzn.tech
+              Support: <a href="mailto:support@khulnasoft.com" className="text-blue-600 hover:underline">
+              support@khulnasoft.com
             </a>
             </p>
           </div>

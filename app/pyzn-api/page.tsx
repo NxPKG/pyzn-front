@@ -41,7 +41,7 @@ export default function ApiDocsPage() {
           <Card className="p-6 mb-8">
             <h2 className="text-xl font-semibold mb-4">Base URL</h2>
             <div className="bg-muted p-4 rounded-md font-mono mb-2">
-              https://api.pyzn.tech
+              https://api.pyzn.vercel.app
             </div>
             <p className="text-sm text-muted-foreground">
               All API endpoints are relative to this base URL.
@@ -175,7 +175,7 @@ export default function ApiDocsPage() {
               <h3 className="text-lg font-medium mb-2">Example Usage</h3>
               <div className="bg-muted p-4 rounded-md overflow-auto">
                 <pre><code>{`# Using curl
-curl -H "X-API-Key: your_api_key" https://api.pyzn.tech/api/v2/projects/requests
+curl -H "X-API-Key: your_api_key" https://api.pyzn.vercel.app/api/v2/projects/requests
 
 # Python with requests library
 import requests
@@ -185,7 +185,7 @@ headers = {
 }
 
 response = requests.get(
-    'https://api.pyzn.tech/api/v2/projects/requests',
+    'https://api.pyzn.vercel.app/api/v2/projects/requests',
     headers=headers
 )
 data = response.json()`}</code></pre>

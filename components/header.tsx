@@ -82,7 +82,7 @@ const Header: React.FC<SearchAppBarProps> = ({ withSearch = true }) => {
           <div className="flex items-center space-x-8 w-full">
             <Link href="/">
               <div className="flex items-center space-x-2">
-                <span className="text-xl font-bold">pyzn.tech</span>
+                <span className="text-xl font-bold">pyzn.vercel.app</span>
               </div>
             </Link>
             {withSearch && <AppBarSearchComponent />}

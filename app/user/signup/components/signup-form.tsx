@@ -57,16 +57,18 @@ export function SignupForm({ onSignupSuccess }: SignupFormProps) {
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             disabled={isLoading}
+            autoComplete="username"
             required
           />
         </div>
         <div className="space-y-2">
           <Input
-            type="username"
+            type="email"
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             disabled={isLoading}
+            autoComplete="email"
             required
           />
         </div>
@@ -77,6 +79,7 @@ export function SignupForm({ onSignupSuccess }: SignupFormProps) {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             disabled={isLoading}
+            autoComplete="new-password"
             required
           />
         </div>
